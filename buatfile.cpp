@@ -1,0 +1,18 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ofstream myFile;
+    string teks;
+
+    cout << "Masukkan teks yang ingin ditulis ke dalam file: ";
+    getline(cin, teks);
+
+    myFile.open(".txt");
+    myFile << teks;
+
+    cout << "Teks berhasil ditulis ke dalam file!" << endl;
+
+    myFile.close();
+}
